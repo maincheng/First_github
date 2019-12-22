@@ -1,0 +1,23 @@
+div,img{
+                          margin:0;
+                          padding:0;
+                      }
+/*img{*/
+/*    float:left;*/
+/*    height:100px;*/
+/*    width:150px;*/
+/*}*/
+#div1{
+    /*width:500px;*/
+    /*height:100px;*/
+    overflow: hidden;
+
+    margin: 0 auto;
+}
+#div2,#div3{
+    float:left;
+}
+#div4{
+    width:500%;
+    float:left;
+}

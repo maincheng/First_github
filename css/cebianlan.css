@@ -1,0 +1,81 @@
+/*隐藏checked复选框*/
+#sidemenu{
+    display: none;
+}
+
+#sidemenu:checked + aside {
+    /*为被选中的sidemenu后的aside设置属性（紧邻）*/
+    left: 0;
+    /*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
+}
+
+#sidemenu:checked ~ #wrap {
+    /*为被选中的sidemenu后的wrap设置属性（非紧邻）*/
+    padding-left: 150px;
+    position: fixed;
+}
+
+aside {
+    /*侧边栏,初始位置为-200px，即隐藏效果*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    width: 150px;
+    height: 400px;
+    background: rgba(8, 6, 64, 0.67);
+    transition: 0.2s ease-out;
+    /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+/*控制侧边栏进出的按钮（外部包裹）*/
+#wrap {
+    margin-left: 20px;
+    padding: 10px;
+    transition: 0.2s ease-out;
+}
+
+/*控制侧边栏进出的按钮（内部文字样式）*/
+label {
+    /*控制侧边栏进出的按钮*/
+    background: white;
+    border-radius: 70px;
+    color: orange;
+    cursor: pointer;
+    display: block;
+    font-family: Courier New;
+    font-size: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+}
+
+label:hover {
+    background: #000;
+}
+
+#sideul li {
+    list-style: none;
+    color: white;
+    width: 100%;
+    height: 1.8em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sideul li:hover {
+    color: orange;
+}

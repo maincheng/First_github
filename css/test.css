@@ -1,0 +1,129 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading,
+.container,
+.picture,
+.footing{
+    margin:10px auto;
+}
+.heading{
+    height: 100px;
+    background-color: chocolate;
+}
+.left,
+.right,
+.main{
+    background-color: cornflowerblue;
+}
+.footing{
+    height: 100px;
+    background-color: #ff0000;
+}
+.picture{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #935099;
+}
+.picList{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+.picList img{
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #7b7b7b;
+    border: 1px solid blue;
+}
+
+@media screen and (min-width: 960px) {
+    .heading,
+    .container,
+    .picture,
+    .footing{
+        width: 960px;
+    }
+
+    .left,
+    .main,
+    .right{
+        float: left;
+        height: 500px;
+    }
+
+    .left,
+    .right{
+        width: 200px;
+    }
+    .main{
+        margin: 0px 5px;
+        width: 550px;
+    }
+
+    .container{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .heading,
+    .container,
+    .picture,
+    .footing{
+        width: 600px;
+    }
+
+    .left,
+    .main{
+        float: left;
+        height: 400px;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        width: 160px;
+    }
+    .main{
+        width: 435px;
+        margin-left: 5px;
+    }
+    .container{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 600px){
+    .heading,
+    .container,
+    .picture,
+    .footing{
+        width: 400px;
+    }
+
+    .left,
+    .right{
+        width: 400px;
+        height: 100px;
+    }
+
+    .main{
+        margin-top: 20px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .right{
+        margin-top: 10px;
+    }
+
+    .container{
+        height: 420px;
+    }
+    .picList{
+        width: 46%;
+        padding: 2%;
+    }
+}

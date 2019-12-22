@@ -1,0 +1,86 @@
+#a1:link{
+    color: #19be71;
+    text-decoration: none;
+}
+#a1:visited{
+    color: #19be71;
+    text-decoration: none;
+}
+#a1:hover{
+    color: #8bbe99;
+    text-decoration: none;
+}
+#a2:link{
+    color: #be130a;
+    text-decoration: none;
+}
+#a2:visited{
+    color: #be130a;
+    text-decoration: none;
+}
+#a2:hover{
+    color: #be867d;
+    text-decoration: none;
+}
+#a3:link{
+    color: #19be71;
+    text-decoration: none;
+}
+#a3:visited{
+    color: #19be71;
+    text-decoration: none;
+}
+#a3:hover{
+    color: #8bbe99;
+    text-decoration: none;
+}
+#a4:link{
+    color: #be130a;
+    text-decoration: none;
+}
+#a4:visited{
+    color: #be130a;
+    text-decoration: none;
+}
+#a4:hover{
+    color: #be867d;
+    text-decoration: none;
+}
+#a5:link{
+    color: #19be71;
+    text-decoration: none;
+}
+#a5:visited{
+    color: #19be71;
+    text-decoration: none;
+}
+#a5:hover{
+    color: #8bbe99;
+    text-decoration: none;
+}
+#rounded-corner
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+}
+#rounded-corner th
+{
+    padding: 8px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #039;
+    background: #b9c9fe;
+}
+#rounded-corner td
+{
+    padding: 8px;
+    background: #e8edff;
+    border-top: 1px solid #fff;
+    color: #669;
+}
+#rounded-corner tr:hover td
+{
+    background: #d0dafd;
+}

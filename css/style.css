@@ -1,0 +1,157 @@
+.header {
+    padding: 30px;
+    text-align: center;
+
+    color: white;
+}
+h1,h2,h3,h4,h5,h6,code{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+#page{
+    background-color: #61a8a4;
+    background-image: linear-gradient(#61a8a4, #935099);
+}
+.main_o{
+    width: 800px;
+    margin: 0 auto;
+}
+.main_o ul li{
+    background: url("../img/templatemo_vt-divider.jpg") repeat-y right;
+}
+.main_o ul li a{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    flex: 1;
+    line-height: 30px;
+
+}
+li a:hover {
+    background-color: rgba(175, 175, 175, 0.96);
+}
+
+a{
+    text-align: center;
+    color: antiquewhite;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    padding: 7px 0 7px 0;
+}
+
+#templatemo_slider {
+    width: 780px;
+    height: 320px;
+    border: 10px solid #579c98;
+}
+#slider {
+    position: relative;
+    width: 800px;
+    height: 320px;
+}
+.Slider {
+    position: relative;
+}
+.demo{
+    display: flex;
+    width: 800px;
+}
+.item_1{
+    flex: 1;
+    height: 350px;
+    width: 280px;
+    margin: 0 40px 40px 0;
+}
+.item_2{
+    flex: 1;
+    height: 350px;
+    width: 280px;
+    margin: 0 20px 40px 0;
+}
+.item_3{
+    flex: 1;
+    height: 350px;
+    margin: 0 0 40px 40px;
+}
+.story{
+    display: flex;
+    flex-flow:row wrap;
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+#picture_main{
+    width: 1340px;
+    margin: 0 auto;
+}
+.picture_1{
+    width: 1340px;
+    margin: 0 auto;
+}
+.kind{
+    width: 1300px;
+    margin: 0 60px 60px 0;
+    float: left;
+}
+.cebianlan{
+    float: left;
+}
+/*#xiala li {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*}*/
+/*#xiala li ul{*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    z-index: 10000;*/
+/*    top: 38px;*/
+/*    background-color: #a7d1cf;*/
+/*    min-width: 130px;*/
+/*}*/
+/*a:hover{*/
+/*    display: block;*/
+/*}*/
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .main_o,
+    #templatemo_slider,
+    #slider,
+    #img_1,
+    #picture_main,
+    .kind,
+    .demo{
+        width: 600px;
+    }
+    .picture_1{
+        width: 560px;
+    }
+    #templatemo_slider,
+    #slider
+    {
+        height: 247px;
+    }
+    .item_1,
+    .item_2{
+        width: 560px;
+        margin: 5px 20px;
+    }
+    .cebianlan,
+    .item_3{
+        display: none;
+    }
+    #img_2{
+        width: 170px;
+        height: 120px;
+    }
+    #img_3{
+        width: 220px;
+        height: 165px;
+    }
+}

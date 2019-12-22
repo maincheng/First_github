@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Fish</title>
+</head>
+<body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script>
+    function trylogin() {
+        var id = $("#id").val().trim();
+        var password = $("#password").val().trim();
+
+        if(id == ''){
+            alert("请输入学号!");
+            $('#id').focus();
+            // document.getElementById("id").focus();
+            // return;
+        }else if(password == '') {
+            alert("请输入密码!");
+            $('#password').focus();
+            // document.getElementById("password").focus();
+            // return;
+        }
+        else {
+            window.open("fish.html");
+        }
+    }
+</script>
+<div class="register main-w3layouts">
+    <form id="ajaxForm" class="login-wrap"  method="post">
+        <img class="avatar" src="img/4.jpg">
+        <ul>
+            <li>
+                <label>用 户 名 :</label>
+                <input type="text" style="height: 48px" name="id" id="id" class="name">
+            </li>
+            <li>
+                <label>密码 :</label>
+                <input type="password" style="height: 48px" name="password" id="password" class="repass">
+            </li>
+            <li>
+                <label></label>
+            <div style="text-align: center">
+                <p>
+                <input style="width: 50px;height: 20px"  type="checkbox" id="rememberMe">
+                <label style="float: left;font-size: 15px;width: 50px;height: 20px;line-height: 25px">记住我</label>
+                </p>
+            </div>
+            </li>
+            <br>
+            <li>
+                <label></label>
+                <input id="loginBtn" type="submit"style="color: #FFF;border: none;background-color: #E64145;border-radius: 4px;height: 48px" class="submit " value="登录" onclick="return trylogin()">
+            </li>
+
+
+        </ul>
+    </form>
+</div>
+</body>
+<script>
+    $(function () {
+
+        initView();
+
+        $("#loginBtn").click(function () {
+            if ($("#rememberMe").is(":checked")) {
+                setCookie("cookie_id", $("#id").val());
+                setCookie("cookie_password", $("#password").val());
+                setCookie("rememberMe", true);
+            } else {
+                delCookie("cookie_id");
+                delCookie("cookie_password");
+                delCookie("rememberMe");
+            }
+
+
+            window.location.reload()
+        });
+    });
+
+    function initView() {
+        if (getCookie("cookie_id")) {
+            $("#id").val(getCookie("cookie_id"));
+        }
+        if (getCookie("cookie_password")) {
+            $("#password").val(getCookie("cookie_password"));
+        }
+        if (getCookie("rememberMe")) {
+            $("#rememberMe").attr("checked", getCookie("rememberMe"));
+        }
+        $("#id").focus(function () {
+            this.select();
+        });
+        $("#password").focus(function () {
+            this.select();
+        });
+    }
+
+    /**
+     * 写入cookie
+     * @param name  cookie 名
+     * @param value  cookie 值
+     */
+    function setCookie(name, value) {
+        var Days = 30; //此 cookie 将被保存 30 天
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    }
+    /**
+     * 删除cookie
+     * @param name
+     */
+    function delCookie(name) {
+        var exp = new Date();
+        exp.setTime(exp.getTime() - 1);
+        var cval = getCookie(name);
+        if (cval != null) document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+    }
+    /**
+     * 读取cookie
+     * @param name
+     * @returns
+     */
+    function getCookie(name) {
+        var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+        if (arr != null)
+            return unescape(arr[2]);
+        return null;
+    }
+
+
+</script>
+</html>
