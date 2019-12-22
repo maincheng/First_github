@@ -27,3 +27,13 @@
 该页面主要基于ajax实现了文件包含技术，减少了大量的重复，共享了站点头代码，并读取了故事的文本文件，降低了文本维护的成本。<br>
 ![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_9.png)<br><br><br>
 ## 目录详解
+```
+├──login.html 登录页面
+├──fish.html  项目的主页面
+├──picture.html 图片页面，内含多组图片
+├──kind.html  种类页面，文字较多
+├──story_1.html 与鱼相关的故事或文章，下面几个同。
+├──story_2.html ***
+├──story_3.html ***
+├──story_4.html ***
+```
