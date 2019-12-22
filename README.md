@@ -28,12 +28,25 @@
 ![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_9.png)<br><br><br>
 ## 目录详解
 ```
-├──login.html 登录页面
-├──fish.html  项目的主页面
-├──picture.html 图片页面，内含多组图片
-├──kind.html  种类页面，文字较多
-├──story_1.html 与鱼相关的故事或文章，下面几个同。
+├──login.html   登录页面
+├──fish.html    项目的主页面
+├──picture.html   图片页面，内含多组图片
+├──kind.html    种类页面，文字较多
+├──story_1.html   与鱼相关的故事或文章，下面几个同。
 ├──story_2.html ***
 ├──story_3.html ***
 ├──story_4.html ***
+├──css    样式部分
+    ├──login.css  登录页面样式部分
+    ├──style.css  项目主要样式部分
+    ├──cebianlan.css  侧边栏样式部分
+    ├──paomadeng.css  跑马灯功能样式部分
+├──font-awesome   图标字体库
+├──js   js代码部分
+    ├──jquery-3.4.1.min.js
+    ├──paomadeng.js   实现跑马灯
+├──img    项目图片
+├──tpl
+    ├──Untitled-1.tpl   站点头代码
+    ├──story_1/2/3/4.tpl    故事文本文件
 ```
