@@ -9,13 +9,21 @@
 * 调用jquery-3.4.1.min.js对用户名和密码进行判断
 ## 主页面
 主页面的色调为暖色，渐变；多处使用弹性布局。主页面的内容包括：<br>
-* 侧边栏：使用了纯CSS写了一个左侧边栏，初始为-200px隐藏，点击后配合动画效果ease-out有渐变效果；鼠标悬停有颜色变化提示。<br>
-![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_2.png)<br>
-* 页头：标题为英文Fish，下方为欢迎语，然后是一个传统的导航栏。同样在导航栏部分增添样式使其更为舒适。<br>
-![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_3.png)<br>
+* 侧边栏：使用了纯CSS写了一个左侧边栏，包括块元素和内联块状盒子，以及固定定位、伪类。初始为-200px隐藏，点击后配合动画效果ease-out有渐变效果；鼠标悬停有颜色变化提示。<br>
+![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_2.png)<br><br>
+* 页头：标题为英文Fish，下方为欢迎语，然后是一个传统的导航栏。同样在导航栏部分增添样式使其更为舒适：取消链接下划线，使用伪类设置鼠标划过链接颜色，`li`之间插入竖线图分割。并且使用图标字体。<br>
+![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_3.png)<br><br>
 * 图片跑马灯：利用js代码对一组图片实现跑马灯效果，鼠标停留图片停止滚动，离开后继续滚动。<br>
-![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_4.png)<br>
+![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_4.png)<br><br>
 * 文本内容：该部分使用了浮动布局和响应式设计。<br>
-![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_5.png)<br>
+![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_5.png)<br><br>
 * Story：该部分为图片链接，链接后可查看有关的故事内容。<br>
-![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_6.png)<br>
+![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_6.png)<br><br><br>
+## 图片页面
+该页面向用户展示一下金鱼的照片，加入响应式设计。<br>
+## 种类页面
+该页面主要为文字内容，向用户介绍了鱼类的一些大致情况，以及金鱼的种类和相关介绍。<br>
+## Story页面
+该页面主要基于ajax实现了文件包含技术，减少了大量的重复，共享了站点头代码，并读取了故事的文本文件，降低了文本维护的成本。<br>
+![](https://github.com/maincheng/First_github/raw/master/img/Screenshots_9.png)<br><br><br>
+## 目录详解
